@@ -1,0 +1,72 @@
+.cardlist{
+    padding: 80px calc(104px + ((100% - 1440px) / 2));
+    background-color: #F5F6F7;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.cardlist__content{
+    display: grid;
+    margin: 0;
+    padding:0;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: stretch;
+}
+.cardlist__result-title{
+    margin: 0;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+
+}
+.cardlist__more-button{
+    width: 288px;
+    height: 64px;
+    border-radius: 80px;
+    background-color: white;
+    color: #1A1B22;
+    transition: all .7s linear;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    align-self: center;
+}
+.cardlist__more-button:hover{
+    background-color: #E8E8E8;
+}
+@media screen and (max-width: 1350px){
+    .cardlist{
+        padding: 80px;
+    }
+}
+@media screen and (max-width: 990px){
+    .cardlist{
+        padding: 40px;
+    }
+    .cardlist__content{
+        gap: 8px
+    }
+}
+@media screen and (max-width: 760px) {
+    .cardlist__content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .cardlist{
+        padding: 32px 16px;
+        gap: 20px;
+    }
+    .cardlist__content{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+}

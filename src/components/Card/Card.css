@@ -1,0 +1,142 @@
+.card{
+    max-width: 400px;
+    max-height: 576px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    position: relative;
+}
+.card__image{
+    object-fit: cover;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    display: block;
+    max-height: 272px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+.card__description{
+    margin: 0;
+    width: 100%;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 24px 24px;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.card__date{
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+}
+.card__title{
+    margin: 0;
+    color: #1A1B22;
+    font-weight: 400;
+    font-family: 'Roboto Slab';
+    font-size: 26px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+}
+.card__text{
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    text-overflow: ellipsis;
+}
+.card__source{
+    margin: 0;
+    color: #B6BCBF;
+    font-weight: 700;
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.card__button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    top: 24px;
+    right: 24px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+.card__button_type_save{
+    background: url('../../images/save_normal.svg') no-repeat center ;
+    background-color: #FFFFFF;
+}
+.card__button_type_save:hover{
+    background: url('../../images/save_hover.svg') no-repeat center ;
+    background-color: #FFFFFF;
+}
+.card__button_type_delete{
+    background: url('../../images/trash_normal.svg') no-repeat center ;
+    background-color: #FFFFFF;
+}
+.card__button_type_delete:hover{
+    background: url('../../images/trash_hover.svg') no-repeat center ;
+    background-color: #FFFFFF;
+}
+.card__button_type_saved{
+    background: url('../../images/save_marked.svg') no-repeat center ;
+    background-color: #FFFFFF;
+}
+.card__keyword{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    padding: 0 22px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__label{
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    color: black;
+    right: 69px;
+    height: 40px;
+    padding: 0 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.7s linear;
+}
+.card__label_visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.7s linear;
+}

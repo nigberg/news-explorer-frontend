@@ -1,0 +1,26 @@
+.nothing-found{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.nothing-found__title{
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1A1B22;
+    margin: 0;
+}
+.nothing-found__text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    max-width: 250px;
+    text-align: center;
+    margin: 0;
+}

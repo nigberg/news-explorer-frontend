@@ -1,0 +1,77 @@
+.form__submit-button{
+    background-color: #2F71E5;
+    color: white;
+    text-align: center;
+    padding: 20px 60px;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    border-radius: 100px;
+    border: white solid 1px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+.form__submit-button:hover{
+    background-color: #347EFF;
+}
+.form__submit-button_disabled{
+    background-color: #E6E8EB;
+    color: #B6BCBF;
+    cursor: default;
+}
+.form__submit-button_disabled:hover{
+    background-color: #E6E8EB;
+}
+.form__link{
+    text-decoration: none;
+    color: #2F71E5;
+}
+.form__label{
+    color: #2F71E5;
+    font-family: 'Inter';
+    display: block;
+    font-size: 12px;
+    line-height: 14.5px;
+}
+.form__input{
+    border: none;
+    border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+    width: 100%;
+    outline: 0;
+    padding: 9px 0;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 17px;
+
+}
+::placeholder{
+    color: black;
+    opacity: 0.2;
+}
+.form__input:focus{
+    border-bottom: 1px solid black;
+}
+.form__error{
+    font-size: 12px;
+    line-height: 14.5px;
+    color: red;
+    font-family: 'Inter';
+    display: block;
+    margin-bottom: 13px;
+    visibility: hidden;
+}
+.form__error_visible{
+    visibility: visible;
+}
+.form__error_common{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.form__sub{
+    margin: 16px 0 0;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 17px;
+}

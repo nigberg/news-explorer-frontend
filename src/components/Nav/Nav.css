@@ -1,0 +1,173 @@
+.nav{
+    border-bottom: 1px solid #C4C4C4;
+    padding: 19px 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_saved{
+    border-bottom: 1px solid black;
+}
+.nav__logo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto-Slab';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.nav__logo_saved{
+    color: black;
+}
+.nav__menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+}
+.nav__link{
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.nav__link_saved{
+    color: black;
+}
+.nav__link_active{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset:36px;
+
+}
+.sign-button{
+    border-radius: 100px;
+    min-width: 150px;
+    height: 48px;
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.sign-button_saved{
+    color: black;
+    border: 1px black solid;
+}
+.nav-mobile, .nav-mobile_saved, .nav-mobile-open{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .nav{
+        padding: 20px 40px;
+    }
+    .nav__link{
+        font-size: 16px;
+    }
+    .nav__sign-button{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .nav{
+        display: none;
+    }
+    .nav-mobile{
+        display: flex;
+        padding: 16px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #C4C4C4;
+        color: white;
+
+    }
+    .nav-mobile_saved{
+        color: black;
+        border-bottom: 1px solid black;
+
+    }
+    .nav-mobile__logo{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto-Slab';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+
+    }
+    .nav-mobile__logo_saved{
+        color: black;
+
+    }
+    .nav-mobile__hamburger-button{
+        height: 24px;
+        width: 24px;
+        background: none;
+        border: none;
+        background-image: url('../../images/hamburger_white.svg');
+        cursor: pointer;
+    }
+    .nav-mobile__hamburger-button_saved{
+        background: none;
+        background-image: url('../../images/hamburger_black.svg');
+
+    }
+    .nav-mobile__close-button{
+        width: 24px;
+        height: 24px;
+        background: none;
+        border: none;
+        background-image: url('../../images/close.svg');
+        background-size: cover;
+        cursor: pointer;
+    }
+    .nav-mobile-open{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 16px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .nav-mobile-open__top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        border-bottom: 1px solid #C4C4C4;
+        padding-bottom: 16px;
+    }
+    .nav-mobile-open__link{
+        margin: 0;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 56px;
+        color: white;
+        text-decoration: none;
+        background: black;
+        align-self: flex-start;
+    }
+    .nav-mobile-open__sign-button{
+        width: 100%;
+    }
+
+}
