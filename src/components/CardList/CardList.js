@@ -2,7 +2,7 @@ import './CardList.css'
 import Card from '../Card/Card'
 import { useHistory } from 'react-router-dom'
 
-function CardList(props) {
+function CardList({isLoggedIn}) {
   const history = useHistory()
   return (
     <section className="cardlist">
@@ -10,12 +10,12 @@ function CardList(props) {
         <h1 className="cardlist__result-title">Search results</h1>
       )}
       <div className="cardlist__content">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card isLoggedIn={isLoggedIn} />
+        <Card isLoggedIn={isLoggedIn} />
+        <Card isLoggedIn={isLoggedIn} />
+        <Card isLoggedIn={isLoggedIn} />
+        <Card isLoggedIn={isLoggedIn} />
+        <Card isLoggedIn={isLoggedIn} />
 
       </div>
       {history.location.pathname === '/' && (

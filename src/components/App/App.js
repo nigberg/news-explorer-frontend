@@ -15,7 +15,7 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext'
 
 function App() {
   const [currentUser, setCurrentUser] = useState({ name: "Georges D'Anthes" })
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
   const [isSuccessPopupOpen, setIsSuccessPopupOpen] = useState(false)
   const [isRegisterPopupOpen, setIsRegisterPopupOpen] = useState(false)
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false)
@@ -50,11 +50,11 @@ function App() {
         <Switch>
           <Route path="/saved-news">
             <SavedNewsHeader isLoggedIn={isLoggedIn} />
-            <CardList />
+            <CardList isLoggedIn={isLoggedIn} />
           </Route>
           <Route path="*">
             <Header isLoggedIn={isLoggedIn} onSignIn={onSigninClick} onSignOut={signout} />
-            <CardList />
+            <CardList isLoggedIn={isLoggedIn} />
             <About />
           </Route>
         </Switch>

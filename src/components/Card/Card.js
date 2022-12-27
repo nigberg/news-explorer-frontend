@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 import { useContext, useState, useEffect } from 'react'
 import { CurrentUserContext } from '../../contexts/CurrentUserContext'
 
-function Card({ isLoggedIn = true, card, onSave, onDelete }) {
+function Card({ isLoggedIn, card, onSave, onDelete }) {
   const history = useHistory()
   const currentUser = useContext(CurrentUserContext)
   const [isSaved, setIsSaved] = useState(false)
@@ -78,7 +78,7 @@ function Card({ isLoggedIn = true, card, onSave, onDelete }) {
       <div className={`card__label ${isButtonHovered && 'card__label_visible'}`}>
         {history.location.pathname === '/saved-news'
           ? 'Remove from saved'
-          : 'Log in to save articles'}
+          : (!isLoggedIn && 'Log in to save articles')}
       </div>
     </article>
   )
