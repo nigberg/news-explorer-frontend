@@ -1,7 +1,7 @@
 .success-popup__link{
     text-decoration: none;
     color: #2F71E5;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;

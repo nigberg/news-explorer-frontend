@@ -5,7 +5,7 @@ function NothingFound() {
   return (
     <section className="nothing-found">
       <img className="nothing-found__image" src={picture} alt="Nothing Found" />
-      <h1 className="nothing-found__title">Nothing found</h1>
+      <h2 className="nothing-found__title">Nothing found</h2>
       <p className="nothing-found__text">
         Sorry, but nothing matched your search terms.
       </p>

@@ -8,7 +8,7 @@
 }
 .footer__copyright{
     color: #B6BCBF;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -21,7 +21,7 @@
 }
 .footer__link{
     text-decoration: none;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;

@@ -1,7 +1,7 @@
 function SavedNews(props){
     return (
         <section className="saved-news">
-            <h1>Results:</h1>
+            <h2>Results:</h2>
         </section>
     )
 }

@@ -41,6 +41,7 @@ function PopupWithForm({
       <p className="form__sub">
         or &nbsp;
         <Link
+          to="#"
           className="form__link"
           onClick={title === 'Sign in' ? handleSignupClick : handleSigninClick}
         >
