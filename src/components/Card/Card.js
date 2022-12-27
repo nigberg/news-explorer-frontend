@@ -50,7 +50,7 @@ function Card({ isLoggedIn, card, onSave, onDelete }) {
         </p>
         <div className="card__source">treehugger</div>
       </div>
-      {history.location.pathname === '/saved-news' && isLoggedIn && (
+      {history.location.pathname === '/saved-news' && (
         <button
           type="button"
           onMouseEnter={handleMouseEnter}
@@ -72,7 +72,7 @@ function Card({ isLoggedIn, card, onSave, onDelete }) {
           className="card__button card__button_type_saved"
         />
       )}
-      {history.location.pathname === '/saved-news' && isLoggedIn && (
+      {history.location.pathname === '/saved-news' && (
         <div className="card__keyword">some_keyword</div>
       )}
       <div className={`card__label ${isButtonHovered && 'card__label_visible'}`}>
