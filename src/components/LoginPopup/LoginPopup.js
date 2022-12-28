@@ -36,30 +36,52 @@ function LoginPopup({
       onSignupClick={onSignupClick}
       isValid={isValid}
     >
-      <label className="form__label">Email</label>
-      <input
-        className="form__input"
-        placeholder="Enter email"
-        required
-        name="email"
-        value={values.email}
-        onChange={handleChange}
-        type="email"
-      />
-      <span className={`form__error email__error ${errors.email && 'form__error_visible'}`}>Invalid email</span>
-      <label className="form__label">Password</label>
-      <input
-        className="form__input"
-        placeholder="Enter password"
-        required
-        name="password"
-        value={values.password}
-        onChange={handleChange}
-        type="password"
-        minLength='8'
-      />
-      <span className={`form__error password__error ${errors.password && 'form__error_visible'}`}>Short password</span>
-      <span className={`form__error form__error_common ${isCommonError && 'form__error_visible'}`}>Incorrect email or password</span>
+      <div className="form__field">
+        <label className="form__label">Email</label>
+        <input
+          className="form__input"
+          placeholder="Enter email"
+          required
+          name="email"
+          value={values.email}
+          onChange={handleChange}
+          type="email"
+        />
+        <span
+          className={`form__error email__error ${
+            errors.email && 'form__error_visible'
+          }`}
+        >
+          Invalid email
+        </span>
+      </div>
+      <div className="form__field">
+        <label className="form__label">Password</label>
+        <input
+          className="form__input"
+          placeholder="Enter password"
+          required
+          name="password"
+          value={values.password}
+          onChange={handleChange}
+          type="password"
+          minLength="8"
+        />
+        <span
+          className={`form__error password__error ${
+            errors.password && 'form__error_visible'
+          }`}
+        >
+          Short password
+        </span>
+        <span
+          className={`form__error form__error_common ${
+            isCommonError && 'form__error_visible'
+          }`}
+        >
+          Incorrect email or password
+        </span>
+      </div>
     </PopupWithForm>
   )
 }

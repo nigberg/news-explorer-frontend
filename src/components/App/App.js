@@ -15,7 +15,7 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext'
 
 function App() {
   const [currentUser, setCurrentUser] = useState({ name: "Georges D'Anthes" })
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [isSuccessPopupOpen, setIsSuccessPopupOpen] = useState(false)
   const [isRegisterPopupOpen, setIsRegisterPopupOpen] = useState(false)
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false)

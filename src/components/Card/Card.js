@@ -41,16 +41,16 @@ function Card({ isLoggedIn, card, onSave, onDelete }) {
       <img alt="News article" src={testImg} className="card__image" />
       <div className="card__description">
         <div className="card__date">November 4, 2020</div>
-        <h1 className="card__title">
+        <h2 className="card__title">
           Everyone Needs a Special 'Sit Spot' in Nature
-        </h1>
+        </h2>
         <p className="card__text">
           Ever since I read Richard Louv's influential book, "Last Child in the
           Woods," the idea of having a special...
         </p>
         <div className="card__source">treehugger</div>
       </div>
-      {history.location.pathname === '/saved-news' && isLoggedIn && (
+      {history.location.pathname === '/saved-news' && (
         <button
           type="button"
           onMouseEnter={handleMouseEnter}
@@ -72,7 +72,7 @@ function Card({ isLoggedIn, card, onSave, onDelete }) {
           className="card__button card__button_type_saved"
         />
       )}
-      {history.location.pathname === '/saved-news' && isLoggedIn && (
+      {history.location.pathname === '/saved-news' && (
         <div className="card__keyword">some_keyword</div>
       )}
       <div className={`card__label ${isButtonHovered && 'card__label_visible'}`}>

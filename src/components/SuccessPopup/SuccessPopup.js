@@ -13,7 +13,7 @@ function SuccessPopup({ isOpen, onClose, onSigninClick }) {
       isOpen={isOpen}
       onClose={onClose}
     >
-      <Link className="success-popup__link" onClick={handleSigninClick}>
+      <Link to='#' className="success-popup__link" onClick={handleSigninClick}>
         Sign in
       </Link>
     </Popup>

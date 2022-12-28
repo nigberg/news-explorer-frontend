@@ -9,7 +9,7 @@ function Nav({ isLoggedIn, onSignIn, onSignOut }) {
   const currentUser = useContext(CurrentUserContext)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const history = useHistory()
-  const classModifier = history.location.pathname === '/' ? '' : '_saved'
+  const isSavedPage = history.location.pathname === '/saved-news'
   const exitIcon =
     history.location.pathname === '/' ? logoutWhitePic : logoutBlackPic
 
@@ -22,15 +22,15 @@ function Nav({ isLoggedIn, onSignIn, onSignOut }) {
   }
   return (
     <>
-      <nav className={'nav nav' + classModifier}>
-        <Link to="/" className={'nav__logo nav__logo' + classModifier}>
+      <nav className={`nav ${isSavedPage && 'nav_saved'}`}>
+        <Link to="/" className={`nav__logo ${isSavedPage && 'nav__logo_saved'}`}>
           NewsExplorer
         </Link>
-        <div className={'nav__menu nav__menu' + classModifier}>
+        <div className={`nav__menu ${isSavedPage && 'nav__menu_saved'}`}>
           <NavLink
             exact
             to="/"
-            className={'nav__link nav__link' + classModifier}
+            className={`nav__link ${isSavedPage && 'nav__link_saved'}`}
             activeClassName="nav__link_active"
           >
             Home
@@ -38,7 +38,7 @@ function Nav({ isLoggedIn, onSignIn, onSignOut }) {
           {isLoggedIn && (
             <NavLink
               to="/saved-news"
-              className={'nav__link nav__link' + classModifier}
+              className={`nav__link ${isSavedPage && 'nav__link_saved'}`}
               activeClassName="nav__link_active"
             >
               Saved articles
@@ -46,7 +46,7 @@ function Nav({ isLoggedIn, onSignIn, onSignOut }) {
           )}
           <button
             type="button"
-            className={'sign-button sign-button' + classModifier}
+            className={`sign-button ${isSavedPage && 'sign-button_saved'}`}
             onClick={isLoggedIn ? onSignOut : onSignIn}
           >
             {!isLoggedIn ? (
@@ -60,20 +60,17 @@ function Nav({ isLoggedIn, onSignIn, onSignOut }) {
         </div>
       </nav>
       {!isMobileMenuOpen ? (
-        <nav className={'nav-mobile nav-mobile' + classModifier}>
+        <nav className={`nav-mobile ${isSavedPage && 'nav-mobile_saved'}`}>
           <Link
             to="/"
-            className={'nav-mobile__logo nav-mobile__logo' + classModifier}
+            className={`nav-mobile__logo ${isSavedPage && 'nav-mobile__logo_saved'}`}
           >
             NewsExplorer
           </Link>
           <button
             type="button"
             onClick={toggleMobileMenu}
-            className={
-              'nav-mobile__hamburger-button nav-mobile__hamburger-button' +
-              classModifier
-            }
+            className={`nav-mobile__hamburger-button ${isSavedPage && 'nav-mobile__hamburger-button_saved'}`}
           />
         </nav>
       ) : (

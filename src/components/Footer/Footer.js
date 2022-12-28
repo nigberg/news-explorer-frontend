@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer__copyright">
         &copy; {new Date().getFullYear()} Supersite, Powered by News API
       </div>
-      <div className="footer__links">
+      <nav className="footer__links">
         <Link to="/" className="footer__link footer__link-home">
           Home
         </Link>
@@ -22,7 +22,7 @@ function Footer() {
         <a href="https://facebook.com/nigberg" className="footer__link" target='_blank'>
           <img className="footer__icon footer__fb" src={fbIcon} alt='facebook' />
         </a>
-      </div>
+      </nav>
     </footer>
   )
 }

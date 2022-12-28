@@ -11,7 +11,7 @@
 .nav__logo{
     text-decoration: none;
     color: white;
-    font-family: 'Roboto-Slab';
+    font-family: 'Roboto-Slab', serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -27,7 +27,7 @@
 }
 .nav__link{
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -50,7 +50,7 @@
     color: white;
     background-color: transparent;
     border: 1px white solid;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -101,7 +101,7 @@
     .nav-mobile__logo{
         text-decoration: none;
         color: white;
-        font-family: 'Roboto-Slab';
+        font-family: 'Roboto-Slab', serif;
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
@@ -157,7 +157,7 @@
     }
     .nav-mobile-open__link{
         margin: 0;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 56px;

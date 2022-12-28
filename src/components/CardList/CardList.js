@@ -7,7 +7,7 @@ function CardList({isLoggedIn}) {
   return (
     <section className="cardlist">
       {history.location.pathname === '/' && (
-        <h1 className="cardlist__result-title">Search results</h1>
+        <h2 className="cardlist__result-title">Search results</h2>
       )}
       <div className="cardlist__content">
         <Card isLoggedIn={isLoggedIn} />

@@ -6,7 +6,7 @@ function About() {
     <section className="about">
       <img src={picture} alt="Author" className="about__picture" />
       <div className="about_description">
-        <h1 className="about__title">About the author</h1>
+        <h2 className="about__title">About the author</h2>
         <p className="about__text">
           Hi, everybody! My name is Meir Nigberg. I am a full stack web
           developer, and this is my final project at Practicum-100 course.

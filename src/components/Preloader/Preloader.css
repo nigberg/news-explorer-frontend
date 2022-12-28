@@ -17,7 +17,7 @@
     animation: spin .75s infinite linear;
   }
   .preloader__text{
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
