@@ -12,6 +12,7 @@ function Card({ isLoggedIn, card, onSave, onDelete, onUnauthorizedClick }) {
 
   useEffect(() => {
     if (
+      isLoggedIn &&
       currentUser.savedCards &&
       currentUser.savedCards.some((article) => article.link === card.url)
     ) {
