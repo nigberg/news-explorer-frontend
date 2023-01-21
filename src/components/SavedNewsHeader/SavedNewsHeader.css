@@ -1,3 +1,6 @@
+.saved-news-header{
+  padding: 0 calc((100% - 1440px) / 2) 0;
+}
 .saved-news-header__container{
     padding: 40px 104px 56px;
     display: flex;
