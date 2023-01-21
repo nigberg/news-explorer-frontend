@@ -14,5 +14,5 @@ NodeJS, ExpressJS, MongoDB
 
 VS Code  
 
-[API deployed on Doogle Cloud](https://api.nigberg-news.students.nomoredomainssbs.ru)
+[API deployed on Doogle Cloud](https://api.nigberg-news.students.nomoredomainssbs.ru)  
 [Site demo version deployed on Doogle Cloud](https://www.nigberg-news.students.nomoredomainssbs.ru)
