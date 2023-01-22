@@ -12,8 +12,7 @@
     row-gap: 16px;
     column-gap: 16px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-items: stretch;
+    grid-auto-rows: auto;
 }
 .cardlist__result-title{
     margin: 0;
@@ -40,6 +39,9 @@
 }
 .cardlist__more-button:hover{
     background-color: #E8E8E8;
+}
+.cardlist__more-button_hidden{
+    visibility: hidden;
 }
 @media screen and (max-width: 1350px){
     .cardlist{

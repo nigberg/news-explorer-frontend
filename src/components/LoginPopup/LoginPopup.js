@@ -8,6 +8,7 @@ function LoginPopup({
   onClose,
   isOpen,
   isCommonError,
+  isWaiting
 }) {
   const {
     values,
@@ -35,6 +36,7 @@ function LoginPopup({
       onSubmit={handleSubmit}
       onSignupClick={onSignupClick}
       isValid={isValid}
+      isWaiting={isWaiting}
     >
       <div className="form__field">
         <label className="form__label">Email</label>

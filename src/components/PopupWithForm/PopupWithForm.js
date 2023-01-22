@@ -11,6 +11,7 @@ function PopupWithForm({
   onSignupClick,
   isValid,
   onSubmit,
+  isWaiting
 }) {
   const handleSigninClick = () => {
     onClose()
@@ -35,7 +36,7 @@ function PopupWithForm({
             !isValid && 'form__submit-button_disabled'
           }`}
         >
-          {title}
+          {isWaiting ? "Processing..." : title}
         </button>
       </form>
       <p className="form__sub">
